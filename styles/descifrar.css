@@ -1,0 +1,50 @@
+body {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  color: #ffffff;
+
+  .content {
+    width: 80%;
+    margin: 0;
+
+    fieldset {
+      border: none;
+      padding: 2rem 0;
+      border-bottom: 3px solid #3b3b4f;
+      text-align: center;
+
+      label {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      input,
+      textarea {
+        background-color: #0a0a23;
+        border: 1px solid #0a0a23;
+        color: #ffffff;
+        width: 50vw;
+        resize: none;
+      }
+    }
+
+    .result {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+
+      p {
+        padding: 10px;
+        overflow-x: scroll;
+        border: #ffffff55 solid 1px;
+      }
+    }
+  }
+}
